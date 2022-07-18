@@ -13,9 +13,6 @@ class Book(Base):
     current_page = Column(Integer, default=True)
     total_pages = Column(Integer, default=True)
 
-    items = relationship("UserChat", back_populates="owner")
-
-
 class UserChat(Base):
     __tablename__ = "user_chat"
 
